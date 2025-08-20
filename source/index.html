@@ -16,17 +16,19 @@
 <body class="page__body">
   <header class="main-header main-header--index">
     <div class="container main-header__container">
-      <nav class="main-nav">
-        <a class="main-nav__logo logo" href="index.html">
-          <picture>
-            <source width="70" height="59" type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg">
-            <source width="60" height="50" type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg">
-            <img class="logo__image" src="images/logo.svg" width="33" height="38" alt="Логотип Кэт энерджи">
-          </picture>
-        </a>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <a class="logo main-header__logo" href="#">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg">
+          <img class="logo__image" src="images/logo.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+        </picture>
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list main-nav__list--index">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link" href="#">Главная</a>
             </li>
@@ -106,35 +108,35 @@
       <div class="container example__container">
         <h2 class="example__title">Живой пример</h2>
         <div class="example__wrapper">
-        <div class="example__inner">
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__list">
-          <dl class="example__description">
-            <dt class="example__value">5 кг</dt>
-            <dd class="example__option">Cнижение веса</dd>
-          </dl>
-          <dl class="example__description">
-            <dt class="example__value">60 дней</dt>
-            <dd class="example__option">Затрачено времени</dd>
-          </dl>
-          <p class="example__cost">Затраты на питание: <span class="example__price">15 000 РУБ.</span></p>
+          <div class="example__inner">
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example__list">
+              <dl class="example__description">
+                <dt class="example__value">5 кг</dt>
+                <dd class="example__option">Cнижение веса</dd>
+              </dl>
+              <dl class="example__description">
+                <dt class="example__value">60 дней</dt>
+                <dd class="example__option">Затрачено времени</dd>
+              </dl>
+              <p class="example__cost">Затраты на питание: <span class="example__price">15 000 РУБ.</span></p>
+            </div>
+          </div>
+          <div class="example__container slider">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
+              <img class="slider__image" width="280" height="256" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="Толстый и худой кот">
+            </picture>
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
+              <img class="slider__image" width="280" height="256" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="Толстый и худой кот">
+            </picture>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">Передвинуть ползунок слайдера</span></button>
+          </div>
         </div>
       </div>
-        <div class="example__container slider">
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
-            <img class="slider__image" width="280" height="256" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="Толстый и худой кот">
-          </picture>
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
-            <img class="slider__image" width="280" height="256" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="Толстый и худой кот">
-          </picture>
-          <button class="slider__toggle" type="button"><span class="visually-hidden">Передвинуть ползунок слайдера</span></button>
-        </div>
-      </div>
-    </div>
     </section>
 
     <section class="contacts">
@@ -187,6 +189,8 @@
       </a>
     </div>
   </footer>
+
+  <script src="/scripts/index.js"></script>
 </body>
 
 </html>

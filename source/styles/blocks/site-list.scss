@@ -1,7 +1,34 @@
 .site-list a {
+  position: relative;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  text-align: center;
   font-family: $primary-font;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  text-decoration: none;
   color: $basic-black;
+  box-shadow: inset 0 -1px 0 #e6e6e6;
+}
+
+.site-list__item:first-child a {
+  box-shadow: inset 0 1px 0 #e6e6e6, inset 0 -1px 0 #e6e6e6;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 436px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 475px;
+  }
 }
