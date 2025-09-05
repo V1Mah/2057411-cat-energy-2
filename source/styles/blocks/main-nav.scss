@@ -20,8 +20,6 @@
   .main-nav {
     display: flex;
     justify-content: space-between;
-    width: 704px;
-    margin: 0 auto;
   }
 
   .main-nav__toggle {
@@ -31,7 +29,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 1220px;
+    max-width: 1220px;
   }
 }
 
@@ -117,7 +115,7 @@
     display: none;
   }
 
-  .main-nav--nojs .main-nav__toggle {
+  /* .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 
@@ -128,7 +126,11 @@
 
   .main-nav--nojs .site-list__item {
     display: block;
-  }
+  } */
+}
+
+.main-nav--catalog {
+  color: $basic-black;
 }
 
 .main-nav__list {
@@ -136,8 +138,3 @@
   padding: 0;
   list-style: none;
 }
-
-.main-nav__list a {
-  color: $basic-black;
-}
-
