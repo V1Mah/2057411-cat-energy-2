@@ -205,7 +205,8 @@
 }
 
 .programs__link {
-  position: relative;
+  display: flex;
+  align-items: center;
   font-family: $primary-font;
   font-size: 16px;
   line-height: 16px;
@@ -227,24 +228,18 @@
   }
 }
 
-.programs__link::after {
-  content: "";
-  display: block;
-  background-color: $basic-black;
+.programs__link-arrow {
   width: 32px;
   height: 10px;
-  mask-image: url("../../icons/stack.svg#icon-arrow");
-  mask-position: 100%;
-  mask-size: 32px 10px;
-  mask-repeat: no-repeat;
-  position: absolute;
-  top: 11px;
-  left: 101px;
+  background-image: url("../../icons/icon-arrow.svg");
+  background-position: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 15px;
 }
 
 @media (min-width: $tablet-width) {
-  .programs__link::after {
-    top: 14px;
-    left: 133px;
+  .programs__link-arrow {
+    margin-left: 25px;
   }
 }
