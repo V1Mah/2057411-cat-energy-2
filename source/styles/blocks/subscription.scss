@@ -134,13 +134,13 @@
 @media (min-width: $tablet-width) {
   .subscription__control {
     margin: 0;
-    min-width: 376px;
+    max-width: 376px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .subscription__control {
-    min-width: 496px;
+    max-width: 496px;
   }
 }
 

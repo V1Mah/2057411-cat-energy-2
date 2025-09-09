@@ -18,13 +18,16 @@
 @media (min-width: $desktop-width) {
   .programs__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 10px;
   }
 }
 
 .programs__item {
+  position: relative;
   background-color: $basic-grey;
-  padding: 30px 33px 22px 20px;
+  padding: 30px 20px 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,7 +65,7 @@
   }
 }
 
-.programs__title--slim::after {
+.programs__item--slim::after {
   content: "";
   background-image: url("../../icons/stack.svg#cat-slim");
   background-repeat: no-repeat;
@@ -70,37 +73,34 @@
   width: 50px;
   height: 53px;
   position: absolute;
-  top: -9px;
-  left: 0;
+  top: 21px;
+  left: 20px;
 }
 
 @media (min-width: $tablet-width) {
-  .programs__title--slim::after {
+  .programs__item--slim::after {
     background-image: url("../../icons/stack.svg#cat-slim-tablet");
     background-size: 200px 210px;
     width: 200px;
     height: 210px;
-    top: 3px;
-    left: 394px;
+    top: 80px;
+    left: auto;
+    right: 63px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .programs__title--slim::after {
+  .programs__item--slim::after {
     background-image: url("../../icons/stack.svg#cat-slim-desktop");
     background-size: 100px 106px;
     width: 100px;
     height: 106px;
-    top: -39px;
-    left: 0;
+    top: 41px;
+    left: 52px;
   }
 }
 
-.programs__title--pro {
-  padding-left: 91px;
-}
-
-.programs__title--pro::after {
+.programs__item--pro::after {
   content: "";
   background-image: url("../../icons/stack.svg#cat-pro");
   background-repeat: no-repeat;
@@ -108,34 +108,34 @@
   width: 67px;
   height: 50px;
   position: absolute;
-  top: -9px;
-  left: -7px;
+  top: 24px;
+  left: 13px;
 }
 
 @media (min-width: $tablet-width) {
-  .programs__title--pro::after {
+  .programs__item--pro::after {
     background-image: url("../../icons/stack.svg#cat-pro-tablet");
     background-size: 268px 200px;
     width: 268px;
     height: 200px;
-    top: 15px;
-    left: 359px;
+    top: 91px;
+    left: auto;
+    right: 29px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .programs__title--pro::after {
+  .programs__item--pro::after {
     background-image: url("../../icons/stack.svg#cat-pro-desktop");
     background-size: 134px 100px;
     width: 134px;
     height: 100px;
-    top: -32px;
-    left: -19px;
+    top: 47px;
+    left: 33px;
   }
 }
 
 .programs__title {
-  position: relative;
   font-family: $primary-font;
   font-size: 24px;
   line-height: 37px;
@@ -213,8 +213,12 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-black;
-  padding-top: 4px;
+  padding-top: 2px;
   padding-bottom: 4px;
+}
+
+.programs__link:hover .programs__link-arrow {
+  background-image: url("../../icons/icon-arrow-hover.svg");
 }
 
 .programs__link:active {
@@ -225,6 +229,7 @@
   .programs__link {
     font-size: 20px;
     line-height: 20px;
+    padding-top: 0;
   }
 }
 

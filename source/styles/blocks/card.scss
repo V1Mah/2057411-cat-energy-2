@@ -1,5 +1,6 @@
 .card {
   position: relative;
+  align-self: start;
   padding: 20px 20px 25px;
 }
 
@@ -88,13 +89,13 @@
 
 @media (min-width: $tablet-width) {
   .card__content {
-    margin-bottom: 32px;
+    margin-bottom: 33px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .card__content {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 }
 
@@ -133,31 +134,6 @@
   }
 }
 
-.card__title--plus {
-  font-family: $primary-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: $text-grey;
-  padding: 0;
-  margin-bottom: 8px;
-}
-
-@media (min-width: $tablet-width) {
-  .card__title--plus {
-    font-size: 20px;
-    line-height: 24px;
-    margin: 0;
-    margin-bottom: 23px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .card__title--plus {
-    margin-bottom: 26px;
-  }
-}
-
 .card__list {
   list-style: none;
   padding: 0;
@@ -184,22 +160,18 @@
     font-size: 16px;
     line-height: 20px;
     box-shadow: 0 1px 0 #cdcdcd;
-    padding-bottom: 2px;
-    padding-top: 10px;
+    padding-bottom: 4px;
+    padding-top: 8px;
   }
 
   .card__item:first-child {
     padding-top: 0;
   }
-
-  .card__item:last-child {
-    padding-bottom: 5px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .card__item {
-    padding-top: 11px;
+    padding-top: 10px;
   }
 
   .card__item:first-child {
@@ -217,84 +189,4 @@
   color: $basic-white;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.card__description {
-  font-size: 12px;
-  line-height: 16px;
-  color: $basic-text-color;
-  margin: 0;
-  margin-bottom: 21px;
-}
-
-@media (min-width: $tablet-width) {
-  .card__description {
-    font-size: 16px;
-    line-height: 18px;
-    margin-bottom: 82px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .card__description {
-    margin-bottom: 91px;
-  }
-}
-
-.card--add {
-  background-image: url("../../icons/stack.svg#icon-plus");
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
-  background-position: center 25px;
-  text-align: center;
-  padding-top: 78px;
-  padding-bottom: 25px;
-}
-
-@media (min-width: $tablet-width) {
-  .card--add {
-    padding: 160px 37px 40px;
-    background-image: url("../../icons/stack.svg#icon-plus-tablet");
-    background-repeat: no-repeat;
-    background-size: 60px 60px;
-    background-position: center 50px;
-    text-align: center;
-    padding-top: 160px;
-    padding-bottom: 40px;
-    box-shadow: 0 0 0 2px #f2f2f2;
-    align-self: end;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .card--add {
-    padding-top: 150px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .card__content--add {
-    margin-bottom: 0;
-    margin-right: 40px;
-    margin-left: 40px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .card__content--add {
-    margin: 0;
-  }
-}
-
-.button--accent {
-  font-family: $primary-font;
-  color: $basic-text-color;
-  width: 100%;
-  background-color: #f2f2f2;
-}
-
-.button--accent:hover,
-.button--accent:focus,
-.button--accent:active {
-  background-color: #ebebeb;
 }

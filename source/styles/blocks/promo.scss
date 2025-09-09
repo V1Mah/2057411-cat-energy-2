@@ -60,6 +60,7 @@
 
 @media (min-width: $tablet-width) {
   .promo__title {
+    max-width: 420px;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 40px;
@@ -81,6 +82,7 @@
 
 @media (min-width: $tablet-width) {
   .promo__slogan {
+    max-width: 420px;
     font-size: 20px;
     line-height: 20px;
     margin: 0;

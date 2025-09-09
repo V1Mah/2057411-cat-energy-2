@@ -5,18 +5,20 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="../source/fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="../source/fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <script src="../source/scripts/index.js" defer></script>
+  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header main-header--index">
     <div class="container main-header__container">
-      <a class="logo main-header__logo" href="#">
+      <a class="logo main-header__logo" href="index.html">
         <picture>
           <source width="70" height="59" type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg">
           <source width="60" height="50" type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg">
@@ -28,7 +30,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list main-nav__list--index">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link" href="#">Главная</a>
             </li>
@@ -66,7 +68,7 @@
       <div class="container programs__container">
         <h2 class="visually-hidden">Программы питания</h2>
         <div class="programs__wrapper">
-          <div class="programs__item">
+          <div class="programs__item programs__item--slim">
             <h3 class="programs__title programs__title--slim">Похудение</h3>
             <p class="programs__description">Ваш кот весит больше собаки и<br> почти утратил способность лазить<br> по деревьям? Пора на диету! Cat<br> Energy Slim поможет вашему<br> питомцу сбросить лишний вес.</p>
             <a class="programs__link" href="#">Каталог slim <span class="programs__link-arrow"></span></a>
@@ -85,20 +87,16 @@
         <h2 class="functional__title">Как это работает</h2>
         <ul class="functional__list">
           <li class="functional__item functional__item--nutrient">
-            <span class="functional__description">Функциональное питание<br> содержит только полезные<br> питательные вещества.</span>
-            <span class="functional__number">1</span>
+            <p class="functional__description">Функциональное питание<br> содержит только полезные<br> питательные вещества.</p>
           </li>
           <li class="functional__item functional__item--powder">
-            <span class="functional__description">Выпускается в виде порошка,<br> который нужно лишь залить<br> кипятком и готово.</span>
-            <span class="functional__number">2</span>
+            <p class="functional__description">Выпускается в виде порошка,<br> который нужно лишь залить<br> кипятком и готово.</p>
           </li>
           <li class="functional__item functional__item--diet">
-            <span class="functional__description">Замените один-два приема<br> обычной еды на наше<br> функциональное питание.</span>
-            <span class="functional__number">3</span>
+            <p class="functional__description">Замените один-два приема<br> обычной еды на наше<br> функциональное питание.</p>
           </li>
           <li class="functional__item functional__item--result">
-            <span class="functional__description">Уже через месяц наслаждайтесь<br> изменениями к лучшему<br> вашего питомца!</span>
-            <span class="functional__number">4</span>
+            <p class="functional__description">Уже через месяц наслаждайтесь<br> изменениями к лучшему<br> вашего питомца!</p>
           </li>
         </ul>
       </div>
@@ -191,7 +189,7 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__copyright copyright" href="#">
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">HTML Academy</span>
         <svg class="copyright__image" xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
           <g clip-path="url(#a)">
