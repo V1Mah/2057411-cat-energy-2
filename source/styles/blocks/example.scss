@@ -12,9 +12,14 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    position: relative;
     background: linear-gradient(to bottom, #ffffff 0, #ffffff 134px, #f2f2f2 134px, #f2f2f2 596px);
     padding-bottom: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__container {
+    position: relative;
   }
 }
 
@@ -167,23 +172,33 @@
 
 .example__option {
   position: absolute;
-  left: -21px;
   top: 49px;
-  width: 80px;
+  transform: translate(50%);
+  margin: 0;
+  right: 50%;
   font-size: 12px;
   line-height: 12px;
   color: $basic-text-color;
   background-color: #eaeaea;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 @media (min-width: $tablet-width) {
   .example__option {
-    width: 100%;
     font-size: 14px;
     line-height: 14px;
     background-color: $basic-white;
     top: 63px;
-    left: -40px;
+    padding: 0;
+  }
+
+  .example__option--decline {
+    min-width: 114px;
+  }
+
+  .example__option--spent {
+    min-width: 142px;
   }
 }
 

@@ -55,6 +55,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  counter-reset: functional-counter;
 }
 
 @media (min-width: $tablet-width) {
@@ -78,6 +79,7 @@
   flex-shrink: 0;
   gap: 20px;
   align-items: center;
+  counter-increment: functional-counter;
 }
 
 @media (min-width: $tablet-width) {
@@ -106,22 +108,7 @@
     z-index: -1;
     width: 134px;
     height: 280px;
-  }
-
-  .functional__item--nutrient::after {
-    content: "1";
-  }
-
-  .functional__item--powder::after {
-    content: "2";
-  }
-
-  .functional__item--diet::after {
-    content: "3";
-  }
-
-  .functional__item--result::after {
-    content: "4";
+    content: counter(functional-counter);
   }
 }
 
